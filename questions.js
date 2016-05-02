@@ -9,7 +9,7 @@ var selectElementsStartingWithVowel = function(array) {
 }
 
 var removeNullElements = function(array) {
-  return 'Write your method here';
+  return array.filter(function(n) { return n !== null } );
 }
 
 var removeNullAndFalseElements = function(array) {
