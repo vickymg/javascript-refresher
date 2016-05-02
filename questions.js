@@ -1,10 +1,11 @@
 var selectElementsStartingWithA = function(array) {
-  function startsWithA(word) { return word[0] === "a" };
-  return array.filter(startsWithA);
+  return array.filter(function startsWithA(word) { return word[0] === "a" });
 }
 
 var selectElementsStartingWithVowel = function(array) {
-  return 'Write your method here';
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+  function startsWithVowel(word) { return vowels.indexOf(word[0]) > -1}
+  return array.filter(startsWithVowel);
 }
 
 var removeNullElements = function(array) {
