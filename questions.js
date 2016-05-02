@@ -13,7 +13,7 @@ var removeNullElements = function(array) {
 }
 
 var removeNullAndFalseElements = function(array) {
-  return 'Write your method here';
+  return array.filter(function(n) { return n !== false && n !== null });
 }
 
 var reverseWordsInArray = function(array) {
