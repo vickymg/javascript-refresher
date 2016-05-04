@@ -29,7 +29,7 @@ var everyPossiblePair = function(array) {
 }
 
 var allElementsExceptFirstThree = function(array) {
-  return 'Write your method here';
+  return array.splice(3, array.length);
 }
 
 var addElementToBeginning = function(array, element) {
