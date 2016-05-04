@@ -46,7 +46,7 @@ var getFirstHalf = function(string) {
 }
 
 var makeNegative = function(number) {
-  return 'Write your method here';
+  return -Math.abs(number);
 }
 
 var numberOfPalindromes = function(array) {
