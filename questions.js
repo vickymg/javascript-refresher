@@ -42,7 +42,8 @@ var sortByLastLetter = function(array) {
 }
 
 var getFirstHalf = function(string) {
-  return 'Write your method here';
+  var strlength = Math.ceil(string.length/2);
+  return string.split('', strlength).join("");
 }
 
 var makeNegative = function(number) {
