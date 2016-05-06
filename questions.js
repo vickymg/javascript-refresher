@@ -55,6 +55,9 @@ var numberOfPalindromes = function(array) {
 }
 
 var shortestWord = function(array) {
+  return array.reduce(function(a, b) {
+    return b.length > a.length ? a : b;
+  });
 }
 
 var longestWord = function(array) {
