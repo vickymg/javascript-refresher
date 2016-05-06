@@ -55,11 +55,12 @@ var numberOfPalindromes = function(array) {
 }
 
 var shortestWord = function(array) {
-  return 'Write your method here';
 }
 
 var longestWord = function(array) {
-  return 'Write your method here';
+  return array.reduce(function(a, b) {
+    return a.length > b.length ? a : b;
+  });
 }
 
 var sumNumbers = function(array) {
