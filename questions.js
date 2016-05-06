@@ -79,7 +79,8 @@ var stringToNumber = function(string) {
 }
 
 var calculateAverage = function(array) {
-  return 'Write your method here';
+  var sum = array.reduce(function(a, b) { return a + b });
+  return sum/array.length;
 }
 
 var getElementsUntilGreaterThanFive = function(array) {
