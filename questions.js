@@ -137,7 +137,7 @@ var titleize = function(string) {
 }
 
 var checkForSpecialCharacters = function(string) {
-  return 'Write your method here';
+  return /\W/.test(string);
 }
 
 var squareRoot = function(number) {
