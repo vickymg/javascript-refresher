@@ -128,7 +128,8 @@ var formatDateNicely = function(date) {
 }
 
 var getDomainName = function(string) {
-  return 'Write your method here';
+  domain = string.split(/[@]/)[1];
+  return domain.replace(".com", "");
 }
 
 var titleize = function(string) {
