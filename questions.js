@@ -124,7 +124,7 @@ var roundUp = function(number) {
 }
 
 var formatDateNicely = function(date) {
-  return 'Write your method here';
+  return date.toLocaleDateString('en-GB');
 }
 
 var getDomainName = function(string) {
