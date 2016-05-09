@@ -51,7 +51,13 @@ var makeNegative = function(number) {
 }
 
 var numberOfPalindromes = function(array) {
-  return 'Write your method here';
+  palindromes = [];
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] == array[i].split('').reverse().join('')) {
+      palindromes.push(array[i]);
+    }
+  }
+  return palindromes.length;
 }
 
 var shortestWord = function(array) {
