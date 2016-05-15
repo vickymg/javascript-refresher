@@ -119,7 +119,7 @@ var getAllLetters = function(array) {
 var swapKeysAndValues = function(object) {
   newObj = {}
   for ( var key in object) {
-    newObj[object[key]] = key; 
+    newObj[object[key]] = key;
   };
   return newObj;
 }
@@ -129,7 +129,8 @@ var sumKeysAndValues = function(object) {
 }
 
 var removeCapitals = function(string) {
-  return 'Write your method here';
+  var capitals = /[A-Z]/g
+  return string.replace(capitals, "");
 }
 
 var roundUp = function(number) {
