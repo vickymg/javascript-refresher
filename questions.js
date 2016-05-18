@@ -38,7 +38,16 @@ var addElementToBeginning = function(array, element) {
 }
 
 var sortByLastLetter = function(array) {
-  return 'Write your method here';
+  sortedArray = []
+  var reverseArray = function(array) {
+    result = []
+    for ( i = 0; i < array.length; i ++ ) {
+      result.push(array[i].split("").reverse().join(""));
+    }
+    return result;
+    }
+   sortedArray = reverseArray(array).sort();
+   return reverseArray(sortedArray);
 }
 
 var getFirstHalf = function(string) {
