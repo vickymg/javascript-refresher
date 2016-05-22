@@ -160,7 +160,17 @@ var getDomainName = function(string) {
 }
 
 var titleize = function(string) {
-  return 'Write your method here';
+  var result = [];
+  var words = string.split(' ')
+  for(i = 0; i < words.length; i++) {
+    if(words[i] === "and" || words[i] == "the"){
+      result.push(words[i]);
+    } else {
+      result.push(words[i].charAt(0).toUpperCase() + words[i].slice(1));
+    }
+  }
+  var title = result.join(" ")
+  return title.charAt(0).toUpperCase() + title.slice(1);
 }
 
 var checkForSpecialCharacters = function(string) {
