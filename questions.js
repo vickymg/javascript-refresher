@@ -25,7 +25,15 @@ var reverseWordsInArray = function(array) {
 }
 
 var everyPossiblePair = function(array) {
-  return 'Write your method here';
+  var result = [];
+  while(array.length > 1) {
+  	for(var i = 1; i < array.length; i++) {
+  		var pair = [array[0], array[i]];
+  		result.push(pair);
+  	}
+  	array.shift();
+  }
+  return result;
 }
 
 var allElementsExceptFirstThree = function(array) {
