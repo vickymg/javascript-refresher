@@ -125,13 +125,16 @@ var convertArrayToObject = function(array) {
 }
 
 var getAllLetters = function(array) {
-  letters = []
-  result = []
-  for ( i = 0; i < array.length; i ++ ) {
-    letters.push(array[i].split(""));
+  var newArray = [];
+  for (var word of array) {
+    for(var i = 0; i < word.length; i++) {
+      newArray.push(word[i]);
+    }
   }
-  return result.concat.apply([], letters).sort();
+  var result = Array.from(new Set(newArray));
+  return result.sort();
 }
+
 
 var swapKeysAndValues = function(object) {
   newObj = {}
